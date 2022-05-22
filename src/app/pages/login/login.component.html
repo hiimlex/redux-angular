@@ -2,7 +2,7 @@
   <div class="content">
     <main class="login">
       <h2>Login Form</h2>
-      <form class="form" [formGroup]="loginForm">
+      <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <input
           type="text"
           id="user"
@@ -13,12 +13,11 @@
         <input
           id="password"
           name="password"
-          type="passwor"
+          type="password"
           placeholder="Password"
           formControlName="password"
         />
         <button
-          type="button"
           [disabled]="loginForm.invalid"
           [class.disabled]="loginForm.invalid"
         >
