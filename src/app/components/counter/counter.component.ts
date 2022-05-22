@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { increment, decrement, reset } from './store/actions/counter.action';
-import { Reducers } from './store/reducers/reducers';
+import { increment, decrement, reset } from '../../store/actions/counter.action';
+import { Reducers } from '../../store/reducers/reducers';
 
 @Component({
   template: `<button (click)="increment()">Increment</button>

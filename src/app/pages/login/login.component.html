@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="content">
+    <main class="login">
+      <h2>Login Form</h2>
+      <form class="form" [formGroup]="loginForm">
+        <input
+          type="text"
+          id="user"
+          name="user"
+          placeholder="Username"
+          formControlName="user"
+        />
+        <input
+          id="password"
+          name="password"
+          type="passwor"
+          placeholder="Password"
+          formControlName="password"
+        />
+        <button
+          type="button"
+          [disabled]="loginForm.invalid"
+          [class.disabled]="loginForm.invalid"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+  </div>
+</div>
